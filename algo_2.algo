@@ -1,0 +1,159 @@
+ALGORITHM PROB_1
+VAR
+    set1:ARRAY_OF INTEGER;
+    set2:ARRAY_OF INTEGER;
+    elem,elem2,i,sum,j,sum2,total:INTEGER;
+
+BEGIN
+ write("enter set1");
+ read(set1);
+ write("enter set2");
+ read(set2);
+
+sum:=0;
+FOR i FROM 0 TO set1.length-1 STEP step  DO
+ elem=set1[i];
+   FOR j FROM 0 TO set2.length-1 STEP step DO
+      IF (elem<>set2[j]) THEN
+      sum:=sum+elem;
+       
+         
+END_IF
+END_FOR
+END_FOR
+sum2:=0;
+FOR i FROM 0 TO set2.length-1 STEP step  DO
+elem2=set2[i];
+   FOR j FROM 0 TO set1.length-1 STEP step DO
+      IF (elem2<>set1[j]) THEN
+      sum2:=sum2+elem2;
+       
+         
+END_IF
+END_FOR
+END_FOR
+ total:=sum+sum2;
+ write("sum of distincts elements is",total);
+
+END
+
+ALGORITHM PROB1_HASH
+VAR
+   htab1 : HASH_TABLE<INTEGER,CHAR>;
+   str1 : STRING[50];
+   htab2: HASH_TABLE<INTEGER,CHAR>;
+   str2 : STRING[50];
+   i,a,j,sum1,sum2,total,b : INTEGER;
+  
+BEGIN
+   Read(str1);
+   Read(str2);
+// first we browse the string to define the count of each character
+   sum1:=0;
+   FOR i FROM 0 TO str1.length -1 STEP 1  DO
+       htab1.insert(i,str1[i]);
+   FOR j FROM 0 TO str2.length-1 STEP 1 DO
+       htab2.insert(i,str2[i]); 
+   FOR i FROM 0 TO str1.length -1 STEP 1  DO
+       a=htab1.get(i);
+       FOR j FROM 0 TO str2.length-1 STEP 1 DO
+           IF (a<>htab2.get(j)) THEN
+               sum1:=sum1+a;
+           END_IF
+       END_FOR
+       
+   END_FOR
+   sum2:=0
+   FOR i FROM 0 TO str2.length -1 STEP 1  DO
+       
+       b=htab2.get(i);
+       FOR j FROM 0 TO str1.length-1 STEP 1 DO
+           IF (b<>htab1.get(j)) THEN
+               sum2:=sum2+b;
+           END_IF
+       END_FOR
+       
+   END_FOR
+   total:=sum1+sum2;
+   write("sum of distincts elements is",total);
+   END
+
+ALGORITHM PROB_2_ARRAY
+VAR
+    set1:ARRAY_OF INTEGER;
+    set2:ARRAY_OF INTEGER;
+    elem,elem2,i,sum,j,sum2,total:INTEGER;
+
+BEGIN
+ write("enter set1");
+ read(set1);
+ write("enter set2");
+ read(set2);
+
+sum:=0;
+FOR i FROM 0 TO set1.length-1 STEP step  DO
+ elem=set1[i];
+   FOR j FROM 0 TO set2.length-1 STEP step DO
+      IF (elem=set2[j]) THEN
+      sum:=sum+elem;
+       
+         
+END_IF
+END_FOR
+END_FOR
+sum2:=0;
+FOR i FROM 0 TO set2.length-1 STEP step  DO
+elem2=set2[i];
+   FOR j FROM 0 TO set1.length-1 STEP step DO
+      IF (elem2=set1[j]) THEN
+      sum2:=sum2+elem2;
+       
+         
+END_IF
+END_FOR
+END_FOR
+ total:=sum+sum2;
+ write("sum of same elements is",total);
+
+END
+
+ALGORITHM PROB2_HASH
+VAR
+   htab1 : HASH_TABLE<INTEGER,CHAR>;
+   str1 : STRING[50];
+   htab2: HASH_TABLE<INTEGER,CHAR>;
+   str2 : STRING[50];
+   i,a,j,sum1,sum2,total,b : INTEGER;
+  
+BEGIN
+   Read(str1);
+   Read(str2);
+// first we browse the string to define the count of each character
+   sum1:=0;
+   FOR i FROM 0 TO str1.length -1 STEP 1  DO
+       htab1.insert(i,str1[i]);
+   FOR j FROM 0 TO str2.length-1 STEP 1 DO
+       htab2.insert(i,str2[i]); 
+   FOR i FROM 0 TO str1.length -1 STEP 1  DO
+       a=htab1.get(i);
+       FOR j FROM 0 TO str2.length-1 STEP 1 DO
+           IF (a=htab2.get(j)) THEN
+               sum1:=sum1+a;
+           END_IF
+       END_FOR
+       
+   END_FOR
+   sum2:=0
+   FOR i FROM 0 TO str2.length -1 STEP 1  DO
+       
+       b=htab2.get(i);
+       FOR j FROM 0 TO str1.length-1 STEP 1 DO
+           IF (b=htab1.get(j)) THEN
+               sum2:=sum2+b;
+           END_IF
+       END_FOR
+       
+   END_FOR
+   total:=sum1+sum2;
+   write("sum of same elements is",total);
+   END
