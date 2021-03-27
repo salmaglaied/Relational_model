@@ -1,0 +1,56 @@
+PROCEDURE dot_product (v1,v2:ARRAY_OF INTEGER)
+VAR
+    ps,i:INTEGER;
+    ps:=0;
+BEGIN
+    FOR i FROM 0 TO v1.length-1 STEP step  DO
+        ps=ps+v1[i]*v2[i];
+    END_FOR
+END
+
+ALGORITHM prob
+VAR
+   n,i:INTEGER;
+   v[n]:  ARRAY_OF INTEGER;
+
+BEGIN
+ read(n);
+   FOR i FROM 0 TO n-1 STEP 1  DO
+      read(v[i]);
+      read(v[i+1]);
+
+       IF (dot_product(v[i],v[i+1])=0) THEN
+           write("vectors are orthogonal ");
+       END_IF 
+   END_FOR
+       
+END
+FUNCTION dot_product2(v1,v2:ARRAY_OF INTEGER) : INTEGER
+VAR
+     ps,i:INTEGER;
+    ps:=0;
+BEGIN
+    FOR i FROM 0 TO v1.length-1 STEP step  DO
+        ps=ps+v1[i]*v2[i];
+    END_FOR
+    RETURN ps ;
+END
+
+ALGORITHM prob2
+VAR
+   orth,n,i:INTEGER;
+   v[n]:  ARRAY_OF INTEGER;
+
+BEGIN
+ read(n);
+   FOR i FROM 0 TO n-1 STEP 1  DO
+      read(v[i]);
+      read(v[i+1]);
+      orth:=dot_product2(v[i],v[i+1]);
+
+       IF (orth=0) THEN
+           write("vectors are orthogonal ");
+       END_IF 
+   END_FOR
+       
+END
