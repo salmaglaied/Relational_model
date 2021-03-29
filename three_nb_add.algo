@@ -1,0 +1,21 @@
+ALGORITHM count
+VAR
+s:STRING:='';
+a,i,nb_word,nb_v:INTEGER;
+BEGIN
+REPEAT
+    write("enter a sentence")
+UNTIL (FOR i FROM 1 TO length(s) STEP step  DO
+    s[length(s)]='.';
+END_FOR)
+a=length(s);
+write("number of characters is",a);
+FOR i FROM 1 to length(s)
+IF (s[i]=' ') THEN
+    nb_word=nb_word+1;
+END_IF
+FOR i FROM 0 to (s.length)-1
+IF (s[i]='a' or s[i]='e' or s[i]='i' s[i]='o' or s[i]='y' or s[i]='u') THEN
+    nb_v=nb_v+1;
+END_IF
+END

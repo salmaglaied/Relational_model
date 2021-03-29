@@ -1,0 +1,27 @@
+PROCEDURE insertion_sort ( A : ARRAY_OF INTEGER )
+  VAR
+   holePosition,valueToInsert:INTEGER;
+ 
+	BEGIN
+   FOR i FROM 1 TO A.length STEP step  DO
+        valueToInsert := A[i];
+      holePosition := i;
+      
+      /*locate hole position for the element to be inserted */
+		
+     WHILE (holePosition > 0 and A[holePosition-1] > valueToInsert) DO
+         A[holePosition] := A[holePosition-1];
+         holePosition := holePosition -1 ;
+     END_WHILE  
+         
+      
+		
+      /* insert the number at hole position */
+      A[holePosition] := valueToInsert;
+   END_FOR 
+	
+      /* select value to be inserted */
+     
+     END 
+  
+	

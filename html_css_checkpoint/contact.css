@@ -1,0 +1,141 @@
+body {
+	font-family: roboto;
+	
+}
+header {
+	height: 100px;
+	background: #070707;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.top-menu{
+	float:right;
+    
+}
+.top-menu ul li{
+	display: inline-block;
+	padding: 5px 15px 0px 15px;
+}
+.top-menu ul li a{
+	font-size: 1.1em;
+	color: rgb(243, 242, 242);
+	text-decoration: none;
+	text-transform: uppercase;
+	
+}
+.top-menu ul li a:hover {
+	color: #ef664d;
+	
+	
+}
+.top-menu ul li a.active {
+	color: #ef664d;
+	font-weight: 600;
+}
+nav a {
+	position:relative;
+	display: inline-block;
+	outline: none;
+	color: rgb(7, 7, 7);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+
+
+.cl-effect-5 a {
+	overflow: hidden;
+}
+
+.cl-effect-5 a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.cl-effect-5 a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cl-effect-5 a:hover span,
+.cl-effect-5 a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 100px;
+	background: #ebebeb;
+	height: 1500px;
+}
+.content-area h3 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 40px;
+	margin: 0;
+}
+input[type=text], select, textarea {
+    width:50% ; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+
+  .content-area button {
+    background-color: #ef664d;
+    color: rgb(7, 7, 7);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+  
+    margin-left: 250px;
+  }
+  
+  
+  .content-area {
+    background: #fff;
+  }
+  
+ .content-area .info {
+    color: #222;
+  }
+  
+  .content-area .info i {
+    font-size: 32px;
+    color: #71c55d;
+    float: left;
+  }
+  
+  .content-area .info p {
+    padding: 0 0 10px 50px;
+    margin-bottom: 20px;
+    line-height: 22px;
+    font-size: 14px;
+  }
+  
+  .content-area .info .email p {
+     
+    padding-top: 5px;
+  }

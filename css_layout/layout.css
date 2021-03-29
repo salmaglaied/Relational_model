@@ -1,0 +1,578 @@
+body{
+    font-family: Work sans,Arial,sans-serif;
+    color: #747474;
+    font-weight: 400;
+}
+header{
+    position: sticky;
+}
+.navbar-header{
+    position: sticky;
+}
+nav .navbar  {
+  position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: hsla(0,0%,100%,.98);
+    transition: box-shadow .25s ease 0s;
+    
+   
+}
+.navbar-brand {
+    width: 268px;
+    height: 33px;
+}
+
+.navbar-brand img{
+    max-width: 100%;
+}
+.navbar .navbar-nav   {
+    position: sticky;
+	float:right;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.navbar .navbar-nav   {
+    padding-right: 50px;
+
+    
+        
+}
+
+
+.navbar .navbar-nav  .active a {
+    font-weight: 600;
+    padding-right: 20px;
+    color: #00b39b;
+   
+}
+.navbar .navbar-nav  .inactive a {
+    font-weight: 600;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #ababab;
+   
+}
+.partie_1{
+    max-width: 1015px;
+    position: relative;
+    padding: 20px;
+    display: block;
+    margin-top: 2.0625rem;
+    margin-right: auto;
+    margin-bottom: 3.75rem;
+    margin-left: auto;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+img {
+    max-width: 100%;
+    
+    
+}
+.partie_1 h1{
+    text-align: center;
+    color: #00b39b;
+    font-size: 2.125rem;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    
+}
+.partie_1 .container .row div p{
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+}
+
+
+
+.partie_2  .col-sm .patient{
+    background-color:  #00b39b;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+.partie_2  .col-sm .patient i{
+    margin-bottom: -.4em;
+    max-width: 100%;
+    height: auto;
+    color: white;
+  
+    
+}
+.partie_2  .col-sm .patient h1{
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #fff;
+    margin: .3em 0;
+}
+.partie_2  .col-sm .patient h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+
+
+.partie_2  .col-sm .doctor{
+    background-color: #3d83df;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+.partie_2  .col-sm .doctor h1{
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: .3em 0;
+}
+.partie_2  .col-sm .doctor h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+.partie_2  .col-sm .doctor i{
+    margin-bottom: -.4em;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    
+}
+.partie_2  .col-sm .hospital{
+    background-color: #1b2734;
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+.partie_2  .col-sm .hospital h1{
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: .3em 0;
+}
+.partie_2  .col-sm .hospital h2{
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+.partie_2  .col-sm .hospital i{
+    margin-bottom: -.4em;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    
+}
+.partie_2  .style-select select{
+    width: 100%;
+    color: white;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0 2em 0 0;
+    -webkit-appearance: none;
+    outline: 0;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.partie_3 h1{
+    float: left;
+    width: 33%;
+    font-size: 1.625em;
+    margin: .25em 0 .35em;
+    padding-right: 1em;
+    color: #00b39b;
+    margin-left: 20px;
+    display: block;
+}
+
+
+.brands li {
+    
+    font-size: 1rem;
+    display: inline-block;
+   
+    padding: 5px 0;
+    
+}
+.brands li svg{
+    fill: #b4b2b2;
+    padding-right: 20px;
+    
+}
+.brands li svg:hover {
+    fill: #00b39b;
+  }
+  
+ .brands li   img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    padding-right: 20px;
+    
+}
+.brands li img:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+  }
+  .partie_4{
+    background: #e5faf8;
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    padding: 1.875em 0 .625em;
+    overflow: hidden;
+    margin: 3.125rem auto 5.5rem;
+    
+   
+  
+   
+  }
+  
+  .partie_4 header{
+      margin-top: 30px;
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    display: block;
+    width: 50%;
+    
+}
+  
+  .partie_4  h1{
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    color:#00b39b;
+  }
+  .col2  p{
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+    line-height: 1.7142857143;
+  }
+  .col-2 {
+      
+    margin :0;
+    display:grid;
+    
+    grid-template-columns: 200px 200px;
+   
+    padding: 0;
+  
+    
+    
+}
+.grid stats__grid fade-elements{
+    
+}
+
+.fade-elements>.fade-elements__visible {
+    transform: translate(0);
+    opacity: 1;
+   
+}
+.stats__item {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 5%);
+    height: 250px;
+    text-align: center;
+    padding: 15px;
+    font-size: .8125em;
+    
+    
+}
+.vert-align {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.vert-align img{
+    
+        max-width: 100%;
+        height:auto;
+    
+}
+.stats__item h3 {
+    font-size: 1.8461538462em;
+    color: #00b39b;
+    margin: .5em 0;
+}
+.stats__item p {
+    margin: 0;
+}
+.partie_5 .container_grid{
+    display: grid;
+}
+.partie_5 h1{
+    text-align: center;
+    font-size: 2.1428571429em;
+    color: #00b39b;
+
+
+}
+.partie_5 p{
+    text-align: center;
+    line-height: 1.7142857143;
+}
+
+ .container_cities{
+    display: block;
+    margin: 80px;
+    text-align: justify;
+    
+    
+}
+.carac {
+    display: flex;
+    font-size: 1.125em;
+   
+    line-height: 1.6666666667;
+    padding: 1.1111111111em;
+    justify-content: space-between;
+    color: #747474;
+    
+   
+}
+.carac h3{
+    color: #747474;
+    font-weight: 300;
+}
+.container_cities img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    
+}
+.warsaw{
+    position: relative;
+    display: inline-block;
+     float: left;
+    width: 25%;
+    padding-right: 20px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+    z-index: 2;
+   
+    
+    color: #747474;
+}
+.carac button{
+  
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+
+}
+
+.Barcelona{
+    position: relative;
+    display: inline-block;
+     float: left;
+    width: 25%;
+    padding-right: 20px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+    z-index: 2;
+    
+   
+}
+
+.carac2 {
+    display: flex;
+   
+    font-size: 1.125em;
+   
+    line-height: 1.6666666667;
+    padding: 1.1111111111em;
+    justify-content:space-between
+    
+}
+.carac2 h3{
+    font-weight: 300;
+    color: #747474;
+    padding-left: 0%;
+}
+ .carac2 button {
+    vertical-align: middle;
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+
+}
+
+.Istanbul{
+    position: relative;
+    display: block;
+     float: left;
+    width: 100%;
+    padding-right: 20px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 311px;
+    z-index: 2;
+   
+}
+
+.carac3 {
+    display: flex;
+   
+    font-size: 1.125em;
+   
+    line-height: 1.6666666667;
+    padding: 1.1111111111em;
+    justify-content:space-between
+    
+}
+.carac3 h3{
+    font-weight: 300;
+    color: #747474;
+}
+ .carac3 button {
+    vertical-align: middle;
+    float: right;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+
+}
+.Rome{
+    display: inline-block;
+    float: left;
+}
+.Bologna{
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+}
+.Curitiba {
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+    
+}
+.Mexico{
+    display: block;
+    float: left;
+    
+}
+.partie_6{
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.partie_6 .join-us_header{
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: .875em;
+    text-align: center;
+}
+.join-us__header h1{
+    font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: .75em;
+}
+ .join-us__header .btn{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1.1666666667em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    transition: all .2s ease 0s;
+}
+footer{
+    text-align: center;
+    font-size: 0.5;
+}
