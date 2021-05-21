@@ -1,0 +1,78 @@
+li {
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  .goo{
+      display: flex;
+  }
+  .goo h2{
+      padding-top: 125px;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    color:black
+  }
+  .service{
+      padding-top: 10%;
+      padding-left: 10%;
+      padding-right: 10%;
+      display: flex;
+  }
+  .contact{
+    
+    display: flex;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  a[href^="mailto"]::before {
+    content: "📧 ";
+}
+
+a[href^="tel"]::before {
+    content: "📞 ";
+}
